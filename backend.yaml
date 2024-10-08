@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: backend
-          image: phucanhptit/rentalcarbe:latest
+          image: phucanhptit/rentalcar-be:latest
           ports:
             - containerPort: 8081
           env:
             - name: SPRING_DATASOURCE_URL
-              value: "jdbc:sqlserver://mssql:1433;database=CarRentalDB;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8"
+              value: "jdbc:sqlserver://192.168.0.123:1434;database=CarRentalDB;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8"
             - name: SPRING_DATASOURCE_USERNAME
               value: "sa"
             - name: SPRING_DATASOURCE_PASSWORD
