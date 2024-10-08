@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: phucanhptit/fe-rentalcarangular:latest
+          image: phucanhptit/fe-rentalcarangular-k8s:latest
           ports:
             - containerPort: 80
 ---
@@ -31,4 +31,6 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-  type: ClusterIP
+      # Set the NodePort to 4204
+      nodePort: 30001
+  type: NodePort 
