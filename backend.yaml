@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rentalcar-backend
+  labels:
+    app: rentalcar-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rentalcar-backend
+  template:
+    metadata:
+      labels:
+        app: rentalcar-backend
+    spec:
+      containers:
+        - name: backend
+          image: phucanhptit/rentalcarbe:latest
+          ports:
+            - containerPort: 8081
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: "jdbc:sqlserver://mssql:1433;database=CarRentalDB;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8"
+            - name: SPRING_DATASOURCE_USERNAME
+              value: "sa"
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: "dapaisme@0312"
+            - name: KAFKA_BOOTSTRAP_SERVERS
+              value: "kafka:9092"
+            - name: JWT_SECRET
+              value: "404fdsfsdewrewtwrdfdsdf343254354334eter2B4B6250645367566B5970"
+            - name: ALLOWED_ORIGINS
+              value: "http://localhost:4200"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rentalcar-backend
+spec:
+  selector:
+    app: rentalcar-backend
+  ports:
+    - protocol: TCP
+      port: 8081
+      targetPort: 8081
+  type: ClusterIP
