@@ -32,6 +32,7 @@ spec:
               value: "404fdsfsdewrewtwrdfdsdf343254354334eter2B4B6250645367566B5970"
             - name: ALLOWED_ORIGINS
               value: "http://localhost:4200"
+
 ---
 apiVersion: v1
 kind: Service
