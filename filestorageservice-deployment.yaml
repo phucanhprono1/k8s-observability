@@ -52,6 +52,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: filestorageservice
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "8082"
+    prometheus.io/path: "/actuator/prometheus"
 spec:
   selector:
     app: filestorageservice
