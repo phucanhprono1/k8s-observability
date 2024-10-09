@@ -75,3 +75,19 @@ file:
     download-url: https://filestorageapi.dapaisme.vip/files/download/
     upload-url: https://filestorageapi.dapaisme.vip/api/files/upload
 fileStorage: D:/Car-images
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    prometheus:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  health:
+    kafka:
+      enabled: true
+    show-details: always

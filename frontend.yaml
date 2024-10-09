@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rentalcar-frontend
+  namespace: rentalcar
   labels:
     app: rentalcar-frontend
 spec:
@@ -14,9 +15,9 @@ spec:
       labels:
         app: rentalcar-frontend
       annotations:
-        prometheus.io/scrape: "true"           # Enable scraping
-        prometheus.io/port: "80"                # Port to scrape metrics from
-        prometheus.io/path: "/metrics"  # Replace with the actual path for metrics
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "80"
+        prometheus.io/path: "/metrics"
     spec:
       containers:
         - name: frontend
@@ -28,6 +29,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rentalcar-frontend
+  namespace: rentalcar
   annotations:
     prometheus.io/scrape: "true"
     prometheus.io/port: "80"
@@ -39,6 +41,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-      # Set the NodePort to 4204
       nodePort: 30001
-  type: NodePort 
+  type: NodePort

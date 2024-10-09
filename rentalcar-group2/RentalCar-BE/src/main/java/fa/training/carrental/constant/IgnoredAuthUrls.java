@@ -12,6 +12,7 @@ public final class IgnoredAuthUrls {
     };
 
     public static final String[] SWAGGER_PREFIX_PATH = {"/v1/api-docs", "/swagger-ui.html", "/swagger-ui/**", "/swagger-resources/**", "/webjars/**"};
+    public static final String[] ACTUATOR_PREFIX_PATH = {"/actuator/**"};
 
     public static final String[] ERROR_PREFIX_PATH = {"/error/**"};
 
@@ -22,7 +23,7 @@ public final class IgnoredAuthUrls {
 
     private static String[] paths() {
         return Stream.of(
-                        STATIC_RESOURCE_PREFIX_PATH, SWAGGER_PREFIX_PATH, ERROR_PREFIX_PATH, AUTH_PREFIX_PATH,DATA_PREFIX_PATH)
+                        STATIC_RESOURCE_PREFIX_PATH, SWAGGER_PREFIX_PATH, ERROR_PREFIX_PATH, AUTH_PREFIX_PATH,DATA_PREFIX_PATH, ACTUATOR_PREFIX_PATH)
                 .flatMap(Stream::of)
                 .toArray(String[]::new);
     }
