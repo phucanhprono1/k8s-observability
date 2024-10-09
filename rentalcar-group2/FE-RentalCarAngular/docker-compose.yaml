@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  fe-rentalcarangular:
+    image: phucanhptit/fe-rentalcarangular:${CI_COMMIT_SHA}
+    restart: always
+    ports:
+      - "4201:80"
+    container_name: fe-rentalcarangular

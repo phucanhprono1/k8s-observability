@@ -1,0 +1,122 @@
+stages:
+  - build
+  - test
+  - deploy
+  - cleanup
+
+variables:
+  DOCKER_HOST: unix:///var/run/docker.sock
+  DOCKER_TLS_CERTDIR: ""
+  SPRING_PROFILES_ACTIVE: product
+  GIT_STRATEGY: fetch
+  GITLAB_URL: "http://172.18.0.2:8280"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+  DOCKER_REGISTRY: "docker.io/rentalcar-group2"
+
+cache:
+  paths:
+    - .m2/repository
+    - FE-RentalCarAngular/node_modules/
+
+build-backend:
+  stage: build
+  image: maven:3.8.3-openjdk-17
+  script:
+    - cd RentalCar-BE
+    - mvn clean package -DskipTests
+  artifacts:
+    paths:
+      - RentalCar-BE/target/*.jar
+    expire_in: 1 day
+
+
+build-frontend:
+  stage: build
+  image: node:22.3.0
+  cache:
+    key: FE-RentalCarAngular-${CI_COMMIT_REF_SLUG}
+    paths:
+      - FE-RentalCarAngular/node_modules/
+  script:
+    - cd FE-RentalCarAngular
+    - npm install -g @angular/cli
+    - npm install
+    - ng build --configuration=production
+  artifacts:
+    paths:
+      - FE-RentalCarAngular/dist/
+    expire_in: 1 day
+  before_script:
+    - rm -rf FE-RentalCarAngular/dist/
+    - npm cache clean --force
+
+test-backend:
+  stage: test
+  image: maven:3.8.3-openjdk-17
+  script:
+    - cd RentalCar-BE
+    - mvn test
+  artifacts:
+    paths:
+      - RentalCar-BE/target/surefire-reports
+    expire_in: 1 day
+  dependencies:
+    - build-backend
+
+deploy:
+  stage: deploy
+  image: docker:27.1.1
+  services:
+    - docker:27.1.1-dind
+  before_script:
+    - docker info
+  script:
+    - cd RentalCar-BE
+    - docker compose down
+    - docker image prune -f
+    - docker buildx build --platform linux/amd64,linux/arm64 -t phucanhptit/rentalcar-be:${CI_COMMIT_SHA} --push .
+    - docker compose up -d
+    - cd ../FE-RentalCarAngular
+    - docker compose down
+    - docker image prune -f
+    - docker buildx build --platform linux/amd64,linux/arm64 -t phucanhptit/fe-rentalcarangular:${CI_COMMIT_SHA} --push .
+    - docker compose up -d
+  only:
+    - main
+
+cleanup:
+  stage: cleanup
+  image: docker:27.3.1
+  services:
+    - docker:27.3.1-dind
+  script:
+    - echo "Listing all containers..."
+    - docker ps -a
+    - echo "Stopping and removing unused runner containers..."
+    - docker ps -a --filter "status=exited" --filter "name=runner" -q | xargs -r docker rm -v
+    - echo "Listing remaining containers..."
+    - docker ps -a
+    - echo "Listing all images..."
+    - docker images
+    - echo "Removing unused runner images..."
+    - docker images --filter "dangling=true" -q | xargs -r docker rmi
+    - echo "Removing old backend Spring images..."
+    - |
+      # Get the ID of the most recent rentalcar-be image
+      LATEST_BE_IMAGE=$(docker images --format "{{.ID}} {{.Repository}}" | grep "rentalcar-be" | sort -k2 -r | head -n1 | awk '{print $1}')
+      echo "Latest backend image ID: $LATEST_BE_IMAGE"
+      # Remove old rentalcar-be images, excluding the latest and those in use
+      docker images --format "{{.ID}} {{.Repository}}" | grep "rentalcar-be" | sort -k2 -r | tail -n +2 | awk '{print $1}' | while read -r image_id; do
+      if [ "$image_id" != "$LATEST_BE_IMAGE" ]; then
+      docker rmi $image_id || true
+      fi
+      done
+    - echo "Pruning unused Docker images..."
+    - docker image prune -f
+    - echo "Listing remaining images:"
+    - docker images
+    - echo "Disk usage after cleanup:"
+    - df -h
+  only:
+    - main
+  when: always

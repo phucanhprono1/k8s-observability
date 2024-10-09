@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  rentalcar-be:
+    image: rentalcar-be:${CI_COMMIT_SHA}
+    container_name: rentalcarbe
+    restart: always
+    ports:
+      - "8081:8081"
+    volumes:
+      - /volume1/filestorageservice:/volume1/filestorageservice
+    environment:
+      SPRING_PROFILES_ACTIVE: product
+      SPRING_DATASOURCE_URL: jdbc:sqlserver://192.168.0.123:1434;database=CarRentalDB;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8
+      SPRING_DATASOURCE_USERNAME: sa
+      SPRING_DATASOURCE_PASSWORD: dapaisme@0312
+    # networks:
+    #   default:
+    #     ipv4_address: 192.168.0.3
