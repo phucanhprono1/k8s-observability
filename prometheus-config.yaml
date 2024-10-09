@@ -2,35 +2,12 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: prometheus-config
-  labels:
-    app: prometheus
 data:
   prometheus.yml: |
     global:
       scrape_interval: 15s  # Interval between scrapes
     scrape_configs:
-      # Scrape configuration for Kubernetes services with ServiceMonitor
-      - job_name: 'kubernetes-service-monitor'
-        kubernetes_sd_configs:
-          - role: pod
-        relabel_configs:
-          - source_labels: [__meta_kubernetes_namespace]
-            action: keep
-            regex: rentalcar  # Match your namespace
-          - source_labels: [__meta_kubernetes_service_annotation_prometheus_io_scrape]
-            action: keep
-            regex: true
-          - source_labels: [__meta_kubernetes_service_annotation_prometheus_io_path]
-            action: replace
-            target_label: __metrics_path__
-            regex: (.+)
-          - source_labels: [__meta_kubernetes_service_annotation_prometheus_io_port]
-            action: replace
-            target_label: __address__
-            regex: (.+)
-            replacement: '${1}:8081'  # This is for backend
-          - source_labels: [__meta_kubernetes_service_annotation_prometheus_io_port]
-            action: replace
-            target_label: __address__
-            regex: (.+)
-            replacement: '${1}:80'  # This is for frontend
+      - job_name: 'rentalcar-backend'
+        static_configs:
+          - targets: ['192.168.16.2:30004']  # Adjust based on your setup
+        metrics_path: /actuator/prometheus

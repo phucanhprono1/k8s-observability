@@ -6,7 +6,7 @@ metadata:
   labels:
     app: rentalcar-backend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: rentalcar-backend
@@ -14,12 +14,16 @@ spec:
     metadata:
       labels:
         app: rentalcar-backend
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8081"
+        prometheus.io/path: "/actuator/prometheus"
     spec:
       containers:
         - name: backend
           image: phucanhptit/rentalcar-be:latest
           ports:
-            - containerPort: 8081
+            - containerPort: 8081  # Backend service
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:sqlserver://192.168.0.123:1434;database=CarRentalDB;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8"
@@ -33,6 +37,7 @@ spec:
               value: "404fdsfsdewrewtwrdfdsdf343254354334eter2B4B6250645367566B5970"
             - name: ALLOWED_ORIGINS
               value: "http://localhost:4200"
+
 ---
 apiVersion: v1
 kind: Service
@@ -42,16 +47,19 @@ metadata:
   annotations:
     prometheus.io/scrape: "true"
     prometheus.io/path: "/actuator/prometheus"
-    prometheus.io/port: "8081"
+    prometheus.io/port: "8081"  # This should point to the Prometheus exporter's port
 spec:
   selector:
     app: rentalcar-backend
   ports:
-    - protocol: TCP
-      port: 8081
-      targetPort: 8081
-      nodePort: 30004
+    - name: backend-port  # Name for the backend service port
+      protocol: TCP
+      port: 8081          # Service port for the backend
+      targetPort: 8081    # Port on the container for the backend
+      nodePort: 30004     # Optional NodePort for the backend   # Optional NodePort for the exporter
   type: NodePort
+
+
 ---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
