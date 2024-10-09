@@ -13,10 +13,14 @@ spec:
     metadata:
       labels:
         app: rentalcar-frontend
+      annotations:
+        prometheus.io/scrape: "true"           # Enable scraping
+        prometheus.io/port: "80"                # Port to scrape metrics from
+        prometheus.io/path: "/metrics"  # Replace with the actual path for metrics
     spec:
       containers:
         - name: frontend
-          image: phucanhptit/fe-rentalcarangular-k8s:latest
+          image: phucanhptit/fe-rentalcarangular:latest
           ports:
             - containerPort: 80
 ---
@@ -24,6 +28,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rentalcar-frontend
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "80"
+    prometheus.io/path: "/metrics"
 spec:
   selector:
     app: rentalcar-frontend

@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: filestorageservice
+  labels:
+    app: filestorageservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: filestorageservice
+  template:
+    metadata:
+      labels:
+        app: filestorageservice
+    spec:
+      containers:
+        - name: filestorageservice
+          image: phucanhptit/filestorageservice:latest
+          ports:
+            - containerPort: 8082
+          env:
+            # Override Spring Datasource configurations
+            - name: SPRING_DATASOURCE_URL
+              value: "jdbc:postgresql://postgres-service:5432/filestorage_api"
+            - name: SPRING_DATASOURCE_USERNAME
+              value: "postgres"
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: "postgres"
+            
+            # Override the File Upload Directory
+            - name: FILE_UPLOAD_DIR
+              value: "/storage/uploads"
+            
+            # Override Eureka Configuration (optional)
+            - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
+              value: "http://localhost:8761/eureka/"
+
+            # Override Server Port
+            - name: SERVER_PORT
+              value: "8082"
+
+          volumeMounts:
+            - name: file-storage
+              mountPath: /storage/uploads
+      volumes:
+        - name: file-storage
+          emptyDir: {}  # Replace with persistent storage in production
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: filestorageservice
+spec:
+  selector:
+    app: filestorageservice
+  ports:
+    - protocol: TCP
+      port: 8082
+      targetPort: 8082
+      nodePort: 30006
+  type: NodePort
