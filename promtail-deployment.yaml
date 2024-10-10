@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: promtail
+  namespace: rentalcar
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: promtail
+  template:
+    metadata:
+      labels:
+        app: promtail
+    spec:
+      containers:
+        - name: promtail
+          image: grafana/promtail:latest
+          ports:
+            - containerPort: 9080
+          args:
+            - -config.file=/etc/promtail/promtail.yaml
+          volumeMounts:
+            - name: config-volume
+              mountPath: /etc/promtail
+      volumes:
+        - name: config-volume
+          configMap:
+            name: promtail-config
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: promtail
+  namespace: rentalcar
+spec:
+  ports:
+    - port: 9080
+      targetPort: 9080
+  type: NodePort
+

@@ -51,6 +51,8 @@ allow:
   headers: Content-Type, Authorization
   max-age: 3600
 logging:
+  file:
+    path: app/logs/rentalcar-be.log
   level:
     org.hibernate.SQL: debug
     org.hibernate.type.descriptor.sql: trace

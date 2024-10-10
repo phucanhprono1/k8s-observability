@@ -6,7 +6,7 @@ metadata:
   labels:
     app: rentalcar-backend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: rentalcar-backend
@@ -19,11 +19,18 @@ spec:
         prometheus.io/port: "8081"
         prometheus.io/path: "/actuator/prometheus"
     spec:
+      # initContainers:
+      #   - name: init-log-dir
+      #     image: busybox
+      #     command: ['sh', '-c', 'mkdir -p /app/app/logs && touch /app/app/logs/spring-boot-app.log && chmod -R 777 /app/app/logs']
+      #     volumeMounts:
+      #       - name: logs
+      #         mountPath: /app/app/logs
       containers:
         - name: backend
           image: phucanhptit/rentalcar-be:latest
           ports:
-            - containerPort: 8081  # Backend service
+            - containerPort: 8081
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:sqlserver://192.168.0.123:1434;database=CarRentalDB;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8"
@@ -37,12 +44,30 @@ spec:
               value: "404fdsfsdewrewtwrdfdsdf343254354334eter2B4B6250645367566B5970"
             - name: ALLOWED_ORIGINS
               value: "http://localhost:4200"
+            - name: LOGGING_FILE_PATH
+              value: "app/logs/rentalcar-be.log"
+          volumeMounts:
+            - name: logs
+              mountPath: /app/app/logs
         - name: sidecar-metrics
           image: prom/node-exporter:latest
           ports:
-            - containerPort: 9100  
-          
-
+            - containerPort: 9100
+        - name: promtail
+          image: grafana/promtail:2.8.0
+          args:
+            - -config.file=/etc/promtail/promtail.yaml
+          volumeMounts:
+            - name: promtail-config
+              mountPath: /etc/promtail
+            - name: logs
+              mountPath: /app/app/logs
+      volumes:
+        - name: promtail-config
+          configMap:
+            name: promtail-config
+        - name: logs
+          emptyDir: {}
 ---
 apiVersion: v1
 kind: Service
@@ -52,16 +77,16 @@ metadata:
   annotations:
     prometheus.io/scrape: "true"
     prometheus.io/path: "/metrics"
-    prometheus.io/port: "9100"  # This should point to the Prometheus exporter's port
+    prometheus.io/port: "9100"
 spec:
   selector:
     app: rentalcar-backend
   ports:
-    - name: backend-port  # Name for the backend service port
+    - name: backend-port
       protocol: TCP
-      port: 8081          # Service port for the backend
-      targetPort: 8081    # Port on the container for the backend
-      nodePort: 30004     # Optional NodePort for the backend   # Optional NodePort for the 
+      port: 8081
+      targetPort: 8081
+      nodePort: 30002
     - name: sidecar-metrics
       protocol: TCP
       port: 9100
