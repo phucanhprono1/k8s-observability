@@ -44,9 +44,14 @@ spec:
           volumeMounts:
             - name: file-storage
               mountPath: /storage/uploads
+        - name: sidecar-metrics
+          image: prom/node-exporter:latest
+          ports:
+            - containerPort: 9100
       volumes:
         - name: file-storage
-          emptyDir: {}  # Replace with persistent storage in production
+          emptyDir: {/storage/uploads}  # Replace with persistent storage in production
+      
 
 ---
 apiVersion: v1
@@ -63,7 +68,13 @@ spec:
     app: filestorageservice
   ports:
     - protocol: TCP
+      name: filestorageservice
       port: 8082
       targetPort: 8082
       nodePort: 30006
+    - protocol: TCP
+      name: sidecar-metrics
+      port: 9100
+      targetPort: 9100
+      nodePort: 30058
   type: NodePort

@@ -16,7 +16,23 @@ data:
         static_configs:
           - targets: ['filestorageservice:8082']  # Adjust based on your setup
         metrics_path: /actuator/prometheus
-      - job_name: 'rentalcar-frontend'
+      - job_name: 'global-metrics'
         static_configs:
           - targets: ['node-exporter:9100']  # Adjust based on your setup
+        metrics_path: /metrics
+      - job_name: 'rentalcar-frontend'
+        static_configs:
+          - targets: ['rentalcar-frontend:9100']  # Adjust based on your setup
+        metrics_path: /metrics
+      - job_name: 'node-exporter-backend'
+        static_configs:
+          - targets: ['rentalcar-backend:9100']  # Adjust based on your setup
+        metrics_path: /metrics
+      - job_name: 'node-exporter-fileservice'
+        static_configs:
+          - targets: ['filestorageservice:9100']  # Adjust based on your setup
+        metrics_path: /metrics
+      - job_name: 'node-exporter-postgres'
+        static_configs:
+          - targets: ['postgres-service:9100']  # Adjust based on your setup
         metrics_path: /metrics

@@ -37,6 +37,11 @@ spec:
               value: "404fdsfsdewrewtwrdfdsdf343254354334eter2B4B6250645367566B5970"
             - name: ALLOWED_ORIGINS
               value: "http://localhost:4200"
+        - name: sidecar-metrics
+          image: prom/node-exporter:latest
+          ports:
+            - containerPort: 9100  
+          
 
 ---
 apiVersion: v1
@@ -46,8 +51,8 @@ metadata:
   namespace: rentalcar
   annotations:
     prometheus.io/scrape: "true"
-    prometheus.io/path: "/actuator/prometheus"
-    prometheus.io/port: "8081"  # This should point to the Prometheus exporter's port
+    prometheus.io/path: "/metrics"
+    prometheus.io/port: "9100"  # This should point to the Prometheus exporter's port
 spec:
   selector:
     app: rentalcar-backend
@@ -56,25 +61,12 @@ spec:
       protocol: TCP
       port: 8081          # Service port for the backend
       targetPort: 8081    # Port on the container for the backend
-      nodePort: 30004     # Optional NodePort for the backend   # Optional NodePort for the exporter
+      nodePort: 30004     # Optional NodePort for the backend   # Optional NodePort for the 
+    - name: sidecar-metrics
+      protocol: TCP
+      port: 9100
+      targetPort: 9100
+      nodePort: 30057
   type: NodePort
 
 
----
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-  name: rentalcar-backend-service-monitor
-  namespace: rentalcar
-  labels:
-    app: rentalcar-backend
-spec:
-  selector:
-    matchLabels:
-      app: rentalcar-backend
-  endpoints:
-    - port: "8081"
-      path: /actuator/prometheus
-  namespaceSelector:
-    matchNames:
-      - rentalcar

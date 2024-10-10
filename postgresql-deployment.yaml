@@ -30,6 +30,10 @@ spec:
           volumeMounts:
             - name: postgres-storage
               mountPath: /var/lib/postgresql/data
+        - name: sidecar-metrics
+          image: prom/node-exporter:latest
+          ports:
+            - containerPort: 9100
       volumes:
         - name: postgres-storage
           emptyDir: {}  # Replace with persistent storage in production
@@ -45,6 +49,11 @@ spec:
     app: postgres
   ports:
     - protocol: TCP
+      name: postgres
       port: 5432
       targetPort: 5432
+    - protocol: TCP
+      name: sidecar-metrics
+      port: 9100
+      targetPort: 9100
   type: ClusterIP
