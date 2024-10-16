@@ -73,10 +73,13 @@ metadata:
     name: grafana
 spec:
     ports:
-        - port: 3000
+        - name: http-grafana  # Add a name for the port
+          port: 3000
           protocol: TCP
-          targetPort: http-grafana
+          targetPort: 3000
+          nodePort: 31638
     selector:
         app: grafana
     sessionAffinity: None
-    type: LoadBalancer
+    type: NodePort
+

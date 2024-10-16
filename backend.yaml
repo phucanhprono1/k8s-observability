@@ -93,5 +93,19 @@ spec:
       targetPort: 9100
       nodePort: 30057
   type: NodePort
+---
 
+apiVersion: v1
+kind: Service
+metadata:
+  name: rentalcar-backend-lb
+  namespace: rentalcar
+spec:
+  selector:
+    app: rentalcar-backend
+  ports:
+    - protocol: TCP
+      port: 8081
+      targetPort: 8081
+  type: LoadBalancer
 
