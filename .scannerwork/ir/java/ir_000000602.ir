@@ -1,0 +1,10 @@
+
+‘
+ bookingKafkaMessageKafkaTemplatekfa.training.carrental.config.KafkaConfig#bookingKafkaMessageKafkaTemplate(LProducerFactory;)LKafkaTemplate; µRthis56 5(V">(fa.training.carrental.config.KafkaConfigjava.lang.Object_producerFactory	5W 5(“"?'Recovered#typeBindingLProducerFactory;0java.lang.Object Rthis56 5(V">(fa.training.carrental.config.KafkaConfigjava.lang.Object_producerFactory	5W 5(“"?'Recovered#typeBindingLProducerFactory;0java.lang.Object "…S
+Q
+6 6(3"
+#new-object##new-object#2%KafkaTemplatejava.lang.Object 
+
+6 6(3"
+<init>*8
+6 6(4*yD:/DevOps FPT/k8s-observability/rentalcar-group2/RentalCar-BE/src/main/java/fa/training/carrental/config/KafkaConfig.java

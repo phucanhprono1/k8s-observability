@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.RefreshTokenServiceImpl#findByToken(Ljava/lang/String;)Ljava/util/Optional;
+false
+31d937d0cd09f003a07d74f8db51aa24
+==
+findByToken fa.training.carrental.repositories.RefreshTokenRepository#findByToken(Ljava/lang/String;)Ljava/util/Optional;

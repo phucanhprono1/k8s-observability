@@ -1,0 +1,8 @@
+fa.training.carrental.controllers.BookingController#confirmReturn(LAuthentication;Ljava/lang/String;)LResponseEntity;
+false
+6e89edeb298c665aaafe65db27a21be5
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+==
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+returnCar fa.training.carrental.services.BookingService#returnCar(Ljava/lang/String;Ljava/lang/String;)Lfa/training/carrental/dto/BookingCarResponse;

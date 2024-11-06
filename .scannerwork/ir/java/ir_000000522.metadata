@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.FeedbackController#getCarRatingCount(Ljava/lang/Long;)LResponseEntity;
+false
+cebc14ecd7eb29350f960c02928c087d
+==
+countRatingStar fa.training.carrental.services.FeedbackService#countRatingStar(Ljava/lang/Long;)Ljava/util/List;

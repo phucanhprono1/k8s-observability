@@ -1,0 +1,7 @@
+fa.training.carrental.config.KafkaConfig#producerFactory()LProducerFactory;
+false
+90ba4344c69e9e3738fd02b77f8f78d2
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+==
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

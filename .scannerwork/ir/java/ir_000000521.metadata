@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.FeedbackController#getCarAvgRating(Ljava/lang/Long;)LResponseEntity;
+false
+9786f65b905d906a85bc0464493ea10a
+==
+getCarAvgRating fa.training.carrental.services.FeedbackService#getCarAvgRating(Ljava/lang/Long;)Ljava/lang/Double;

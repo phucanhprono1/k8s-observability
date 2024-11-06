@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.CarServiceImpl#findAvailableCarsWithRatingsAndBookings(Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;LPageable;)LPage;
+false
+345fa4c14280a6d18b277fae583bcb89
+==
+findAvailableCarsWithRatingsAndBookings fa.training.carrental.repositories.CarRepository#findAvailableCarsWithRatingsAndBookings(Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;LPageable;)LPage;

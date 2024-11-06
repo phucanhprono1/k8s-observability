@@ -1,0 +1,6 @@
+fa.training.carrental.controllers.CarController#updateCarStatus(Ljava/lang/Long;Ljava/lang/String;)LResponseEntity;
+false
+d9ad05d20c58c437ef45a3e8ce72d47d
+java.lang.Enum#valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+==
+updateCarStatus fa.training.carrental.services.CarService#updateCarStatus(Ljava/lang/Long;Lfa/training/carrental/enums/CarStatus;)Lfa/training/carrental/entities/Car;

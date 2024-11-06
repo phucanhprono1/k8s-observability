@@ -1,0 +1,11 @@
+fa.training.carrental.controllers.CarController#GetMyCarList(LAuthentication;IILjava/lang/String;Ljava/lang/String;)LResponseEntity;
+false
+b59af43362d55cabb34c967bbb52aa77
+fa.training.carrental.dto.PaginatedResponse#<init>()V
+fa.training.carrental.dto.PaginatedResponse#instance-init#
+java.lang.String#equals(Ljava/lang/Object;)Z
+java.lang.String#isEmpty()Z
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+==
+findByEmail fa.training.carrental.repositories.CarOwnerRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;
+findByOwner fa.training.carrental.services.CarService#findByOwner(Ljava/lang/Long;LPageable;)LPage;

@@ -1,0 +1,10 @@
+fa.training.carrental.controllers.WalletController#viewHistory(LAuthentication;Ljava/lang/String;Ljava/lang/String;II)LResponseEntity;
+false
+84f8e3408947694e45c2256bee235a00
+fa.training.carrental.dto.PaginatedResponse#<init>()V
+fa.training.carrental.dto.PaginatedResponse#instance-init#
+java.time.LocalDateTime#now()Ljava/time/LocalDateTime;
+java.time.LocalDateTime#parse(Ljava/lang/CharSequence;)Ljava/time/LocalDateTime;
+java.time.LocalDateTime#plusMonths(J)Ljava/time/LocalDateTime;
+==
+getTransactionHistory fa.training.carrental.services.WalletService#getTransactionHistory(Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;Ljava/lang/String;LPageable;)LPage;

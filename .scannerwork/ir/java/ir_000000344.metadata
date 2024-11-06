@@ -1,0 +1,12 @@
+fa.training.carrental.utils.CarImageSorter#sortFilePaths(Ljava/util/List;)Ljava/util/List;
+false
+7443090a9567213a4469a25e8b1f034c
+java.lang.String#contains(Ljava/lang/CharSequence;)Z
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+==
+add java.util.List#add(Ljava/lang/Object;)Z
+get java.util.Map#get(Ljava/lang/Object;)Ljava/lang/Object;
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

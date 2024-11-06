@@ -1,0 +1,20 @@
+
+g
+dropRemoveAccentFunctionKfa.training.carrental.utils.DatabaseInitializer#dropRemoveAccentFunction()VøY-"RemoveAccent function dropped successfully."&java.lang.Stringjava.lang.ObjectS"IF OBJECT_ID('dbo.RemoveAccent', 'FN') IS NOT NULL DROP FUNCTION dbo.RemoveAccent"&java.lang.Stringjava.lang.Objectnthis ()"Z/fa.training.carrental.utils.DatabaseInitializerCommandLineRunnerjava.lang.Object "*&java.lang.Systemjava.lang.Objectnthis ()"Z/fa.training.carrental.utils.DatabaseInitializerCommandLineRunnerjava.lang.Object "¬0
+.
+! (tdropFunctionSql"
+#id##id#*m
+k
+   ("4
+#get-field# jdbcTemplate#get-field# jdbcTemplate*2$JdbcTemplatejava.lang.Object 0
+.
+   (-"	
+execute*2	!Unknown! 8é
+æ
+! !(""
+#get-field# out#get-field# out*2°java.io.PrintStreamjava.io.OutputStreamjava.lang.Appendablejava.io.Closeablejava.io.FilterOutputStreamjava.lang.Objectjava.lang.AutoCloseablejava.io.Flushable]
+[
+! !(I	"?
+println0java.io.PrintStream#println(Ljava/lang/String;)V (*2void8
+
+" "(*€D:/DevOps FPT/k8s-observability/rentalcar-group2/RentalCar-BE/src/main/java/fa/training/carrental/utils/DatabaseInitializer.java

@@ -1,0 +1,75 @@
+
+Qfa.training.carrental.services.impl.CarServiceImpl#hasBookings(Ljava/lang/Long;)Z
+ƒD:/DevOps FPT/k8s-observability/rentalcar-group2/RentalCar-BE/src/main/java/fa/training/carrental/services/impl/CarServiceImpl.java… …("startingBlock*Š
+startingBlock
+… …(*Œ
+‰
+
+„ „(
+%3"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*5
+
+__unknown_file (
+
+carIdjava.lang.LongY
+W
+
+…$ …()
+carIdjava.lang.Long"__annotation*"
+
+__unknown_file (
+
+%3*
+1*»
+1
+† †(+´
+±
+
+† †(+6
+%00fa.training.carrental.repositories.CarRepository"__id*e
+
+__unknown_file (I*G4
+2fa.training.carrental.services.impl.CarServiceImpl"
+carRepository»¸
+
+† †(@
+%1java.lang.Integer"cfa.training.carrental.repositories.CarRepository#existsByCarId(Ljava/lang/Long;)Ljava/lang/Integer;*T
+
+__unknown_file (8
+6
+%00fa.training.carrental.repositories.CarRepository*5
+
+__unknown_file (
+
+carIdjava.lang.Long2existsByCarId(Ljava/lang/Long;)m
+k
+
+† †(A 
+resultCheckjava.lang.Integer"__id*5
+
+__unknown_file (
+
+%1java.lang.Integer¯
+¬
+
+‡ ‡(
+%2boolean"	__compare*"
+
+__unknown_file (
+==*>
+
+__unknown_file ("
+ 
+resultCheckjava.lang.Integer* 
+
+__unknown_file (2"
+
+‡ ‡( 
+"":%
+
+… …()
+carIdjava.lang.LongB64
+2fa.training.carrental.services.impl.CarServiceImplHX

@@ -1,0 +1,8 @@
+fa.training.carrental.services.impl.BookingServiceImpl#cancelBooking(Ljava/lang/String;Ljava/lang/String;)Lfa/training/carrental/dto/BookingCarResponse;
+false
+25b62fdedf4f36fe371652d9dae54a06
+java.time.LocalDateTime#now()Ljava/time/LocalDateTime;
+java.util.Optional#get()Ljava/lang/Object;
+==
+negate java.math.BigDecimal#negate()Ljava/math/BigDecimal;
+sendBookingCancellationEmail fa.training.carrental.services.EmailService#sendBookingCancellationEmail(Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDateTime;)V

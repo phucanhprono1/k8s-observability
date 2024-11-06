@@ -1,0 +1,7 @@
+fa.training.carrental.utils.BookingNoGenerator#generate(LSharedSessionContractImplementor;Ljava/lang/Object;)Ljava/io/Serializable;
+false
+93139d35ef0366eb47ef7eb445c5b423
+fa.training.carrental.utils.BookingNoGenerator#getNextSequenceValue(LSharedSessionContractImplementor;)J
+java.lang.String#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+java.time.LocalDate#format(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
+java.time.LocalDate#now()Ljava/time/LocalDate;

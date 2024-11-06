@@ -1,0 +1,3 @@
+fa.training.carrental.services.impl.BookingServiceImpl#createTransaction(Lfa/training/carrental/entities/Customer;Lfa/training/carrental/entities/Booking;Ljava/math/BigDecimal;Lfa/training/carrental/enums/TransactionType;Ljava/math/BigDecimal;)V
+false
+0cbf91ae5aa5edd21158f2fa3cad847f

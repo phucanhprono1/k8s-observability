@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.WalletServiceImpl#findByCustomerEmail(Ljava/lang/String;)Ljava/util/Optional;
+false
+00b3fef5aca1ea336745397ed4d2bb7f
+==
+findByEmail fa.training.carrental.repositories.CustomerRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;

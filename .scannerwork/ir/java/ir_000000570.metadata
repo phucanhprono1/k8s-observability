@@ -1,0 +1,7 @@
+fa.training.carrental.controllers.BookingController#viewAllBookingsByCurrentCustomer(LAuthentication;IILjava/lang/String;Ljava/lang/String;)LResponseEntity;
+false
+afb8cacf32c66f12877f81ff0f32b5f3
+java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z
+==
+findByEmail fa.training.carrental.repositories.CustomerRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;
+getBookingsByCustomerId fa.training.carrental.services.BookingService#getBookingsByCustomerId(Ljava/lang/Long;LPageable;)LPage;

@@ -1,0 +1,6 @@
+fa.training.carrental.services.impl.WalletServiceImpl#getCurrentBalance(Ljava/lang/String;)Ljava/math/BigDecimal;
+false
+0c86074e1bd6b7325295d1a71ee93c5d
+java.util.Optional#map(Ljava/util/function/Function;)Ljava/util/Optional;
+==
+findByEmail fa.training.carrental.repositories.CustomerRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;

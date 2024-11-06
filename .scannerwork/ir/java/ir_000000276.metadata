@@ -1,0 +1,9 @@
+fa.training.carrental.controllers.CarController#findCarById(Ljava/lang/Long;)LResponseEntity;
+false
+16b6dc77f6113f7707675c7148ac2c82
+java.lang.Enum#valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+java.util.Optional#get()Ljava/lang/Object;
+java.util.Optional#isEmpty()Z
+==
+findCarById fa.training.carrental.services.CarService#findCarById(J)Ljava/util/Optional;
+isPending fa.training.carrental.repositories.BookingRepository#isPending(Ljava/lang/Long;Lfa/training/carrental/enums/BookingStatus;)I

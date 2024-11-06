@@ -1,0 +1,9 @@
+fa.training.carrental.services.impl.FeedbackServiceImpl#countRatingStar(Ljava/lang/Long;)Ljava/util/List;
+false
+3d0a2547df4eb9c7467923e5890de06b
+fa.training.carrental.dto.RatingCountDto#instance-init#
+==
+add java.util.List#add(Ljava/lang/Object;)Z
+countRatingStar fa.training.carrental.repositories.FeedbackRepository#countRatingStar(Ljava/lang/Long;)Ljava/util/List;
+map java.util.stream.Stream#map(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+stream java.util.Collection#stream()Ljava/util/stream/Stream;

@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.FeedbackServiceImpl#<init>(Lfa/training/carrental/repositories/FeedbackRepository;Lfa/training/carrental/mapper/FeedbackMapper;Lfa/training/carrental/repositories/BookingRepository;Lfa/training/carrental/services/CarService;)V
+false
+d748e450fa526fe26675ef9bd1c6c5c1
+==
+<init> fa.training.carrental.services.impl.BaseServiceImpl#<init>(Lfa/training/carrental/repositories/BaseRepository;)V

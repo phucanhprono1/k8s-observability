@@ -1,0 +1,6 @@
+fa.training.carrental.services.impl.BookingServiceImpl#updateCarStatus()V
+false
+309b2cb3233a593a0a35b7b788dc903e
+java.time.LocalDateTime#now()Ljava/time/LocalDateTime;
+==
+findAllByStartDateTimeBefore fa.training.carrental.repositories.BookingRepository#findAllByStartDateTimeBefore(Ljava/time/LocalDateTime;)Ljava/util/List;

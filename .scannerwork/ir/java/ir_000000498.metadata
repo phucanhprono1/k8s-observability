@@ -1,0 +1,7 @@
+fa.training.carrental.entities.Account#getAuthorities()Ljava/util/Collection;
+false
+de275b7d1d335f4b810100c33c486a97
+java.lang.Enum#name()Ljava/lang/String;
+java.util.Collections#singleton(Ljava/lang/Object;)Ljava/util/Set;
+==
+getRole fa.training.carrental.entities.Account#getRole()Lfa/training/carrental/enums/ERole;

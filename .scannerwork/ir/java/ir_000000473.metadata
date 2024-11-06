@@ -1,0 +1,7 @@
+fa.training.carrental.services.impl.CarServiceImpl#updateCar(Ljava/lang/Long;Lfa/training/carrental/dto/CarUpdateDto;)Lfa/training/carrental/entities/Car;
+false
+424b9d4fab53148092e7394c1cb61a5c
+java.lang.RuntimeException#<init>(Ljava/lang/String;)V
+java.lang.RuntimeException#instance-init#
+java.util.Optional#get()Ljava/lang/Object;
+java.util.Optional#isPresent()Z

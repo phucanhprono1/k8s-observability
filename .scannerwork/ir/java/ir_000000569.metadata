@@ -1,0 +1,3 @@
+fa.training.carrental.controllers.BookingController#<init>(Lfa/training/carrental/services/BookingService;Lfa/training/carrental/repositories/CustomerRepository;Lfa/training/carrental/repositories/BookingRepository;Lfa/training/carrental/services/CarService;Lfa/training/carrental/services/WalletService;Lfa/training/carrental/repositories/CarRepository;LKafkaTemplate;LReplyingKafkaTemplate;)V
+false
+3618fbc1f64701fb5d493c0d18f2cd62

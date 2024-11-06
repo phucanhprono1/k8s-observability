@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.AuthenticationServiceImpl#instance-init#
+false
+b3014fafc23f8093542ccb06ffb2a743
+java.lang.Class#getName()Ljava/lang/String;
+java.util.logging.Logger#getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;

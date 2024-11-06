@@ -1,0 +1,10 @@
+
+j
+getBrandListXfa.training.carrental.services.impl.BrandModelServiceImpl#getBrandList()Ljava/util/List; ôñthis ($"Å9fa.training.carrental.services.impl.BrandModelServiceImpl0fa.training.carrental.services.BrandModelServicejava.lang.Objectñthis ($"Å9fa.training.carrental.services.impl.BrandModelServiceImpl0fa.training.carrental.services.BrandModelServicejava.lang.Object"ú∏
+µ
+ (#"D
+ #get-field# brandModelRepository #get-field# brandModelRepository*2^7fa.training.carrental.repositories.BrandModelRepositoryjava.lang.ObjectJpaRepository Œ
+À
+ (2"h
+getBrandListVfa.training.carrental.repositories.BrandModelRepository#getBrandList()Ljava/util/List; *2Njava.util.Listjava.util.Collectionjava.lang.Objectjava.lang.Iterable8
+ (3*äD:/DevOps FPT/k8s-observability/rentalcar-group2/RentalCar-BE/src/main/java/fa/training/carrental/services/impl/BrandModelServiceImpl.java

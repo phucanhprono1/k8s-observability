@@ -1,0 +1,7 @@
+organization=phucanhprono1
+projectKey=phucanhprono1_k8s-observability
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.57415
+dashboardUrl=https://sonarcloud.io/dashboard?id=phucanhprono1_k8s-observability
+ceTaskId=AZMAhKidNa7O7wnZygPc
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZMAhKidNa7O7wnZygPc

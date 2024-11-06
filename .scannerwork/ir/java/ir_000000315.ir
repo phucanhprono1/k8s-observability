@@ -1,0 +1,21 @@
+
+g
+addCorsMappingsRfa.training.carrental.config.security.MyAppConfig#addCorsMappings(LCorsRegistry;)V ö1"/**"&java.lang.Stringjava.lang.Objectothis ("[1fa.training.carrental.config.security.MyAppConfigWebMvcConfigurerjava.lang.Object Pcors  (1"<$Recovered#typeBindingLCorsRegistry;0java.lang.Object othis ("[1fa.training.carrental.config.security.MyAppConfigWebMvcConfigurerjava.lang.Object Pcors  (1"<$Recovered#typeBindingLCorsRegistry;0java.lang.Object "Žg
+e
+ ( ",
+#get-field# basePath#get-field# basePath*2&java.lang.Stringjava.lang.Object*
+(
+ (("
+	#binop +#	#binop +#*3
+1
+ ()"
+
+addMapping*2	!Unknown! 8{
+y
+9 (J">
+#get-field# theAllowedOrigins#get-field# theAllowedOrigins*2(java.lang.String[]java.lang.Object7
+5
+ (K"
+allowedOrigins*2	!Unknown! 8
+
+ (*‚D:/DevOps FPT/k8s-observability/rentalcar-group2/RentalCar-BE/src/main/java/fa/training/carrental/config/security/MyAppConfig.java

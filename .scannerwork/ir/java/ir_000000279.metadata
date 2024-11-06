@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.CarController#checkLicensePlateExists(Ljava/lang/String;)Z
+false
+f72bdbd509a30c240ec5567e5122bcce
+==
+existsByLicensePlate fa.training.carrental.services.CarService#existsByLicensePlate(Ljava/lang/String;)Z

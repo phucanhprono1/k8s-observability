@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.BookingServiceImpl#instance-init#
+false
+37d8c0d72730ddef4d9b901d3911c511
+java.lang.Class#getName()Ljava/lang/String;
+java.util.logging.Logger#getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;

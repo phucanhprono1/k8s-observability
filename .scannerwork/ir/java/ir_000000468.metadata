@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.CarServiceImpl#findByOwner(Ljava/lang/Long;LPageable;)LPage;
+false
+0dac3d791ee20e0cc57e98f7ceab2fa6
+==
+findByOwnerId fa.training.carrental.repositories.CarRepository#findByOwnerId(Ljava/lang/Long;LPageable;)LPage;

@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.BrandModelServiceImpl#getModelList(Ljava/lang/String;)Ljava/util/List;
+false
+760e2aaa92df6ad56fbf9e03d9f499e8
+==
+getModelList fa.training.carrental.repositories.BrandModelRepository#getModelList(Ljava/lang/String;)Ljava/util/List;

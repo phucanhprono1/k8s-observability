@@ -1,0 +1,6 @@
+fa.training.carrental.utils.DatabaseInitializer#run([Ljava/lang/String;)V
+false
+fbcc4a48448908904e15bba80415bafe
+fa.training.carrental.utils.DatabaseInitializer#createRemoveAccentFunction()V
+fa.training.carrental.utils.DatabaseInitializer#dropRemoveAccentFunction()V
+java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z

@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.AuthenticationServiceImpl#refreshToken(Lfa/training/carrental/dto/RefreshTokenRequest;)Lfa/training/carrental/dto/AuthenticationResponse;
+false
+54c2088ba2226c5859aa9efd6c2ad1ee
+==
+findByToken fa.training.carrental.services.RefreshTokenService#findByToken(Ljava/lang/String;)Ljava/util/Optional;

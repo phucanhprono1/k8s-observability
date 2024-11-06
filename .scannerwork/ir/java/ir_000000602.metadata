@@ -1,0 +1,3 @@
+fa.training.carrental.config.KafkaConfig#bookingKafkaMessageKafkaTemplate(LProducerFactory;)LKafkaTemplate;
+false
+865cb51dc33b2524160cfcd620135c1d

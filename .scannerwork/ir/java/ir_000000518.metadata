@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.FeedbackController#sendFeedback(Lfa/training/carrental/dto/FeedbackDto;LBindingResult;)LResponseEntity;
+false
+ed55ab64548f3919b9c025700e712d0f
+==
+sendFeedback fa.training.carrental.services.FeedbackService#sendFeedback(Lfa/training/carrental/dto/FeedbackDto;Ljava/lang/String;)Lfa/training/carrental/dto/FeedbackDto;

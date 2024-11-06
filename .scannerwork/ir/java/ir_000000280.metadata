@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.CarController#getSumOfCars()LResponseEntity;
+false
+7067da8c285ca5bebf816df9b2402ced
+==
+sumOfCarByCity fa.training.carrental.services.CarService#sumOfCarByCity()Ljava/util/List;

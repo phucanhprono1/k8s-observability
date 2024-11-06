@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.CarServiceImpl#existsByLicensePlate(Ljava/lang/String;)Z
+false
+b119d8daa840a77ac7be5e4ef470de98
+==
+existsByLicensePlate fa.training.carrental.repositories.CarRepository#existsByLicensePlate(Ljava/lang/String;)Z

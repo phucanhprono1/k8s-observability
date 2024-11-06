@@ -1,0 +1,4 @@
+com.alexannp.filestorageservice.config.SimpleCORSFilter#doFilter(LServletRequest;LServletResponse;LFilterChain;)V
+false
+3e837f61b6a6efb3713a70d4251b2f04
+java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z

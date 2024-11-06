@@ -1,0 +1,12 @@
+fa.training.carrental.services.impl.WalletServiceImpl#getWallet(Ljava/lang/String;)Ljava/math/BigDecimal;
+false
+b5e90c1e45d8c9f79a9d75d1eed8f208
+java.lang.Enum#equals(Ljava/lang/Object;)Z
+java.lang.RuntimeException#<init>(Ljava/lang/String;)V
+java.lang.RuntimeException#instance-init#
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+==
+findByEmail fa.training.carrental.repositories.AccountRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;
+findByEmail fa.training.carrental.repositories.CarOwnerRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;
+findByEmail fa.training.carrental.repositories.CustomerRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;
+getRole fa.training.carrental.entities.Account#getRole()Lfa/training/carrental/enums/ERole;

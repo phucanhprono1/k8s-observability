@@ -1,0 +1,5 @@
+java.util.Objects#requireNonNullElse(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+true
+1bc827992561c9862e61e568bb28c984
+java.lang.NullPointerException#<init>()V
+java.lang.NullPointerException#instance-init#

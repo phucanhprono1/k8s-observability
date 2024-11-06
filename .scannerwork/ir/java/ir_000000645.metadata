@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.WalletController#getCurrentBalance(LAuthentication;)LResponseEntity;
+false
+832f717d2d3f514b9778646807b29d26
+==
+getCurrentBalance fa.training.carrental.services.WalletService#getCurrentBalance(Ljava/lang/String;)Ljava/math/BigDecimal;

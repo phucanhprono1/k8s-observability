@@ -1,0 +1,5 @@
+fa.training.carrental.mapper.AuthenticationMapper#toCustomer(Lfa/training/carrental/dto/RegisterRequestDto;)Lfa/training/carrental/entities/Customer;
+false
+4ba4be95458e01d4a45363937463da7a
+java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z
+java.math.BigDecimal#valueOf(D)Ljava/math/BigDecimal;

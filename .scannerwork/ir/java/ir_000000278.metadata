@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.CarController#hasBookings(Ljava/lang/Long;)LResponseEntity;
+false
+26c8bbf6821bc03b296df4f1f08e7de1
+==
+hasBookings fa.training.carrental.services.CarService#hasBookings(Ljava/lang/Long;)Z

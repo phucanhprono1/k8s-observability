@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.CarServiceImpl#updateCarStatus(Ljava/lang/Long;Lfa/training/carrental/enums/CarStatus;)Lfa/training/carrental/entities/Car;
+false
+3946745f045abb8435a2e6459eac9253
+==
+updateCarStatus fa.training.carrental.repositories.CarRepository#updateCarStatus(Ljava/lang/Long;Lfa/training/carrental/enums/CarStatus;)V

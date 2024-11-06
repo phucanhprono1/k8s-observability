@@ -1,0 +1,4 @@
+fa.training.carrental.services.impl.CarOwnerServiceImpl#listYearlyIncome(Ljava/lang/Long;)Ljava/util/List;
+false
+db84023a70578581b13892d7b9f42aa2
+java.util.List#of()Ljava/util/List;

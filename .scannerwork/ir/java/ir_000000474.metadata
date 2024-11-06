@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.CarServiceImpl#hasBookings(Ljava/lang/Long;)Z
+false
+bb20da7268345482ecc93998cb4b3a4c
+==
+existsByCarId fa.training.carrental.repositories.CarRepository#existsByCarId(Ljava/lang/Long;)Ljava/lang/Integer;

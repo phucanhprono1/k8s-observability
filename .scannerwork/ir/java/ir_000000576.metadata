@@ -1,0 +1,9 @@
+fa.training.carrental.controllers.BookingController#updateBookingStatus(Ljava/lang/Long;Lfa/training/carrental/dto/UpdateBookingStatusRequest;LAuthentication;)LResponseEntity;
+false
+0849c8f2f2a1dbe92875acb364411a9e
+java.lang.Enum#valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+java.lang.String#equals(Ljava/lang/Object;)Z
+==
+confirmDeposit fa.training.carrental.services.WalletService#confirmDeposit(Ljava/math/BigDecimal;Ljava/lang/String;)Ljava/math/BigDecimal;
+updateBookingStatus fa.training.carrental.services.BookingService#updateBookingStatus(Ljava/lang/Long;Lfa/training/carrental/enums/BookingStatus;Lfa/training/carrental/enums/BookingStatus;)I
+updateCarStatus fa.training.carrental.services.CarService#updateCarStatus(Ljava/lang/Long;Lfa/training/carrental/enums/CarStatus;)Lfa/training/carrental/entities/Car;

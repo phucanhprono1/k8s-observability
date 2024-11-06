@@ -1,0 +1,8 @@
+fa.training.carrental.controllers.BookingController#cancelBooking(LAuthentication;Ljava/lang/String;)LResponseEntity;
+false
+533485c066d036918a89c60a674e77cf
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+==
+cancelBooking fa.training.carrental.services.BookingService#cancelBooking(Ljava/lang/String;Ljava/lang/String;)Lfa/training/carrental/dto/BookingCarResponse;
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

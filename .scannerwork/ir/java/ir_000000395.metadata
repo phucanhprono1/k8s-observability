@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.BookingServiceImpl#updateBookingStatus(Ljava/lang/Long;Lfa/training/carrental/enums/BookingStatus;Lfa/training/carrental/enums/BookingStatus;)I
+false
+f36b5f447a8d0ced959e18ead8bfb196
+==
+updateBookingStatus fa.training.carrental.repositories.BookingRepository#updateBookingStatus(Ljava/lang/Long;Lfa/training/carrental/enums/BookingStatus;Lfa/training/carrental/enums/BookingStatus;)I

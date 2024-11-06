@@ -1,0 +1,5 @@
+fa.training.carrental.dto.ListBookingDto#<init>(Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;Ljava/lang/Long;Ljava/lang/String;Ljava/math/BigDecimal;Ljava/math/BigDecimal;Lfa/training/carrental/enums/BookingStatus;Ljava/time/LocalDateTime;Ljava/math/BigDecimal;)V
+false
+115c284a7f4eb5fb65b9c6481450643e
+==
+getNumberOfDays fa.training.carrental.dto.ListBookingDto#getNumberOfDays()Ljava/lang/Long;

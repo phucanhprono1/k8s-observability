@@ -1,0 +1,10 @@
+
+h
+save^fa.training.carrental.services.impl.BaseServiceImpl#save(Ljava/lang/Object;)Ljava/lang/Object; «entity ("T ‰this ("u3fa.training.carrental.services.impl.BaseServiceImpl*fa.training.carrental.services.BaseServicejava.lang.Object‰this ("u3fa.training.carrental.services.impl.BaseServiceImpl*fa.training.carrental.services.BaseServicejava.lang.Objectentity ("T "è¦
+£
+ ("8
+#get-field# baseRepository#get-field# baseRepository*2X1fa.training.carrental.repositories.BaseRepositoryjava.lang.ObjectJpaRepository -
++
+ (*"
+save*2	!Unknown! 8
+ (+*„D:/DevOps FPT/k8s-observability/rentalcar-group2/RentalCar-BE/src/main/java/fa/training/carrental/services/impl/BaseServiceImpl.java

@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.CarController#updateCar(Ljava/lang/Long;Lfa/training/carrental/dto/CarUpdateDto;)LResponseEntity;
+false
+af8af83dab032e8fc2151530d87d3934
+==
+updateCar fa.training.carrental.services.CarService#updateCar(Ljava/lang/Long;Lfa/training/carrental/dto/CarUpdateDto;)Lfa/training/carrental/entities/Car;

@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.CarController#getCarImages(Ljava/lang/Long;)Ljava/util/List;
+false
+c9ccafd04c8ea9ed29f0ad5dec1f1a25
+==
+getCarImages fa.training.carrental.services.CarService#getCarImages(Ljava/lang/Long;)Ljava/util/List;

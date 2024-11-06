@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.FeedbackServiceImpl#viewFeedbackOfOneCar(Ljava/lang/Long;Ljava/lang/Integer;LPageable;)LPage;
+false
+1b82b59e753cc4d9ed9e0feb9fe6ddd9
+==
+getMyCarsFeedBack fa.training.carrental.repositories.FeedbackRepository#getMyCarsFeedBack(Ljava/lang/Long;Ljava/lang/Integer;LPageable;)LPage;

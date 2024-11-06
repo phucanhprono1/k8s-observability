@@ -1,0 +1,5 @@
+fa.training.carrental.config.AuditorAwareImpl#getCurrentAuditor()Ljava/util/Optional;
+false
+707831ddee21d964ee4f267bf10e3663
+java.util.Optional#empty()Ljava/util/Optional;
+java.util.Optional#of(Ljava/lang/Object;)Ljava/util/Optional;

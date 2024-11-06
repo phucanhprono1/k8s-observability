@@ -1,0 +1,21 @@
+
+Xfa.training.carrental.services.impl.BrandModelServiceImpl#getBrandList()Ljava/util/List;•
+ŠD:/DevOps FPT/k8s-observability/rentalcar-group2/RentalCar-BE/src/main/java/fa/training/carrental/services/impl/BrandModelServiceImpl.java ($"1*æ
+1 (#Ç
+Ä
+ (#=
+%07fa.training.carrental.repositories.BrandModelRepository"__id*s
+
+__unknown_file (W*U;
+9fa.training.carrental.services.impl.BrandModelServiceImpl"
+brandModelRepositoryèå
+ (2
+%1java.util.List"Vfa.training.carrental.repositories.BrandModelRepository#getBrandList()Ljava/util/List;*[
+
+__unknown_file (?
+=
+%07fa.training.carrental.repositories.BrandModelRepository2getBrandList()""
+ (3
+
+%1java.util.ListB=;
+9fa.training.carrental.services.impl.BrandModelServiceImplH

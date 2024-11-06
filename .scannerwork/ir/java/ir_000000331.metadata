@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.BrandModelController#getBrandList()LResponseEntity;
+false
+ca2706b4bde9819fcee6f25e9f53bd54
+==
+getBrandList fa.training.carrental.services.BrandModelService#getBrandList()Ljava/util/List;

@@ -1,0 +1,36 @@
+
+^fa.training.carrental.services.impl.BaseServiceImpl#save(Ljava/lang/Object;)Ljava/lang/Object;è
+ÑD:/DevOps FPT/k8s-observability/rentalcar-group2/RentalCar-BE/src/main/java/fa/training/carrental/services/impl/BaseServiceImpl.java ("startingBlock*Í
+startingBlock (}
+{
+ (
+%1"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*)
+
+__unknown_file (
+
+entityTK
+I
+ (
+entityT"__annotation*"
+
+__unknown_file (
+
+%1*
+1*Ÿ
+1 (µ
+≤
+ (7
+%01fa.training.carrental.repositories.BaseRepository"__id*g
+
+__unknown_file (K*I5
+3fa.training.carrental.services.impl.BaseServiceImpl"
+baseRepository"
+ (+
+"":
+ (
+entityTB75
+3fa.training.carrental.services.impl.BaseServiceImplH

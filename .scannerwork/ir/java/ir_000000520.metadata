@@ -1,0 +1,7 @@
+fa.training.carrental.controllers.FeedbackController#getFeedBackList(Ljava/lang/Long;Ljava/lang/Integer;II)LResponseEntity;
+false
+d824c6ab9fad0b8ee43eaa549c26c5db
+fa.training.carrental.dto.PaginatedResponse#<init>()V
+fa.training.carrental.dto.PaginatedResponse#instance-init#
+==
+viewFeedbackOfOneCar fa.training.carrental.services.FeedbackService#viewFeedbackOfOneCar(Ljava/lang/Long;Ljava/lang/Integer;LPageable;)LPage;

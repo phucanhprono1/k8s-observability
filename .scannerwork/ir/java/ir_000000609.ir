@@ -1,0 +1,22 @@
+
+U
+bookingsTopicBfa.training.carrental.config.KafkaConfig#bookingsTopic()LNewTopic; ÑC1<intjava.lang.Objectjava.lang.Numberjava.lang.Integer6
+"bookings"&java.lang.Stringjava.lang.ObjectRthist t(!">(fa.training.carrental.config.KafkaConfigjava.lang.ObjectRthist t(!">(fa.training.carrental.config.KafkaConfigjava.lang.Object"°X
+V
+u u("4
+#get-field# TopicBuilder#get-field# TopicBuilder*2	!Unknown! -
++
+u u(,"
+name*2	!Unknown! 83
+1
+u v("
+
+partitions*2	!Unknown! 81
+/
+u w("
+
+replicas*2	!Unknown! 8-
++
+u x("
+build*2	!Unknown! 8
+u x(*yD:/DevOps FPT/k8s-observability/rentalcar-group2/RentalCar-BE/src/main/java/fa/training/carrental/config/KafkaConfig.java

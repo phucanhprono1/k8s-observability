@@ -1,0 +1,8 @@
+fa.training.carrental.services.impl.FeedbackServiceImpl#getCarAvgRating(Ljava/lang/Long;)Ljava/lang/Double;
+false
+4ab3e0be489cea775c1608c7ec5216c4
+java.lang.Math#round(D)J
+==
+get java.util.List#get(I)Ljava/lang/Object;
+getAvgRating fa.training.carrental.repositories.FeedbackRepository#getAvgRating(Ljava/lang/Long;)Ljava/util/List;
+isEmpty java.util.List#isEmpty()Z

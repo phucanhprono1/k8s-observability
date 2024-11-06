@@ -1,0 +1,6 @@
+fa.training.carrental.validations.UniqueLicensePlateValidator#isValid(Ljava/lang/String;LConstraintValidatorContext;)Z
+false
+2ee3042053d48b7f312efac18a44fd1c
+java.lang.String#isEmpty()Z
+==
+existsByLicensePlate fa.training.carrental.repositories.CarRepository#existsByLicensePlate(Ljava/lang/String;)Z

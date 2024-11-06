@@ -1,0 +1,10 @@
+fa.training.carrental.controllers.CarController#createCar(Lfa/training/carrental/dto/CarRequestDto;LBindingResult;LAuthentication;)LResponseEntity;
+false
+802a18e07432eb778a836341594d09bb
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+==
+convertToEntity fa.training.carrental.mapper.CarMapper#convertToEntity(Lfa/training/carrental/dto/CarRequestDto;)Lfa/training/carrental/entities/Car;
+findByBrandAndModel fa.training.carrental.repositories.BrandModelRepository#findByBrandAndModel(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Optional;
+findByColor fa.training.carrental.repositories.ColorRepository#findByColor(Ljava/lang/String;)Ljava/util/Optional;
+findByEmail fa.training.carrental.repositories.CarOwnerRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;
+save fa.training.carrental.services.CarService#save(Lfa/training/carrental/entities/Car;)Lfa/training/carrental/entities/Car;

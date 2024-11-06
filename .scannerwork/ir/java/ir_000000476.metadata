@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.CarServiceImpl#sumOfCarByCity()Ljava/util/List;
+false
+941b01a28a6224228d1af8907a3a6951
+==
+sumOfCarByCity fa.training.carrental.repositories.CarRepository#sumOfCarByCity(LPageable;)LPage;

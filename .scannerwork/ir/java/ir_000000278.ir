@@ -1,0 +1,25 @@
+
+n
+hasBookings]fa.training.carrental.controllers.CarController#hasBookings(Ljava/lang/Long;)LResponseEntity; ôπcarId
+õ/ õ(G"°java.lang.Longjava.lang.constant.Constablejava.lang.constant.ConstantDescjava.lang.Objectjava.lang.Comparablejava.lang.Numberjava.io.Serializable[this
+õ# õ(."E/fa.training.carrental.controllers.CarControllerjava.lang.Object[this
+õ# õ(."E/fa.training.carrental.controllers.CarControllerjava.lang.ObjectπcarId
+õ/ õ(G"°java.lang.Longjava.lang.constant.Constablejava.lang.constant.ConstantDescjava.lang.Objectjava.lang.Comparablejava.lang.Numberjava.io.Serializable"›á
+Ñ
+
+ú ú(("0
+#get-field# carService#get-field# carService*2?)fa.training.carrental.services.CarServicejava.lang.ObjectØ
+¨
+
+ú ú(;hasBookings"Y
+hasBookingsHfa.training.carrental.services.CarService#hasBookings(Ljava/lang/Long;)Z *2.booleanjava.lang.Booleanjava.lang.Object8^
+\
+
+ù ù("8
+#get-field# ResponseEntity#get-field# ResponseEntity*2	!Unknown! -
++
+
+ù ù(-"
+ok*2	!Unknown! 8
+
+ù ù(.*ÄD:/DevOps FPT/k8s-observability/rentalcar-group2/RentalCar-BE/src/main/java/fa/training/carrental/controllers/CarController.java

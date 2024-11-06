@@ -1,0 +1,6 @@
+fa.training.carrental.config.KafkaConfig#kafkaListenerContainerFactory(LConsumerFactory;)LConcurrentKafkaListenerContainerFactory;
+false
+d7eaf1f4815dbf72846481b4be1bfca0
+==
+bookingKafkaMessageKafkaTemplate fa.training.carrental.config.KafkaConfig#bookingKafkaMessageKafkaTemplate(LProducerFactory;)LKafkaTemplate;
+bookingKafkaMessageProducerFactory fa.training.carrental.config.KafkaConfig#bookingKafkaMessageProducerFactory()LProducerFactory;

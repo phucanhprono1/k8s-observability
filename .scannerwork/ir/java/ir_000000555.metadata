@@ -1,0 +1,5 @@
+fa.training.carrental.dto.ListBookingDto#getNumberOfDays()Ljava/lang/Long;
+false
+d6fd04625b78e4206af43453fe813332
+java.time.LocalDateTime#toLocalDate()Ljava/time/LocalDate;
+java.time.temporal.ChronoUnit#between(Ljava/time/temporal/Temporal;Ljava/time/temporal/Temporal;)J

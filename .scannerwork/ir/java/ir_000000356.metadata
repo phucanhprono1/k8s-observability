@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.WalletServiceImpl#findByCarOwnerEmail(Ljava/lang/String;)Ljava/util/Optional;
+false
+196a7e87602f9ef711d8537130cc6cc0
+==
+findByEmail fa.training.carrental.repositories.CarOwnerRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;

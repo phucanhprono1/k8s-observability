@@ -1,0 +1,5 @@
+com.alexannp.filestorageservice.controllers.FileController#instance-init#
+false
+e4336a983e5acf87a964a509697d4528
+java.lang.Class#getName()Ljava/lang/String;
+java.util.logging.Logger#getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;

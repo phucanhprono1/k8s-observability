@@ -1,0 +1,9 @@
+fa.training.carrental.kafka.BookingKafkaConsumer#processBooking(Lfa/training/carrental/dto/bookingdto/BookingKafkaMessage;)Lfa/training/carrental/dto/BookingCarResponse;
+false
+9defb8bcd4ed19fb440202e70f2f3009
+fa.training.carrental.utils.ByteArrayToMultipartFileConverter#<init>()V
+fa.training.carrental.utils.ByteArrayToMultipartFileConverter#instance-init#
+java.util.Collections#singletonList(Ljava/lang/Object;)Ljava/util/List;
+==
+bookCar fa.training.carrental.services.BookingService#bookCar(Lfa/training/carrental/dto/bookingdto/BookingCarRequest;LMultipartFile;LMultipartFile;)Lfa/training/carrental/dto/BookingCarResponse;
+convert fa.training.carrental.utils.ByteArrayToMultipartFileConverter#convert([BLjava/lang/String;Ljava/lang/String;)LMultipartFile;

@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.EditProfileController#instance-init#
+false
+7c8c2322707d6d4764f74d65d1e5f085
+java.lang.Class#getName()Ljava/lang/String;
+java.util.logging.Logger#getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;

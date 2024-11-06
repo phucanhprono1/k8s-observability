@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.CarServiceImpl#instance-init#
+false
+d79b8d2b16432d7b03fab5dabe28428c
+java.lang.Class#getName()Ljava/lang/String;
+java.util.logging.Logger#getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;

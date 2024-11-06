@@ -1,0 +1,5 @@
+com.alexannp.filestorageservice.controllers.FileController#uploadFile(LMultipartFile;Ljava/lang/String;)LResponseEntity;
+false
+6f34aec611d007b1dd97265038670090
+==
+storeFile com.alexannp.filestorageservice.services.FileStorageService#storeFile(LMultipartFile;Ljava/lang/String;)Lcom/alexannp/filestorageservice/entities/MyFileAttribute;

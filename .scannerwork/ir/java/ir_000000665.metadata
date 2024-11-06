@@ -1,0 +1,5 @@
+fa.training.carrental.controllers.AuthenticationController#instance-init#
+false
+b85a98cd92e201acaf067e5196c7ce6a
+java.lang.Class#getName()Ljava/lang/String;
+java.util.logging.Logger#getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;

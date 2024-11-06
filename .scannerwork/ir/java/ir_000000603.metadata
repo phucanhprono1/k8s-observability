@@ -1,0 +1,3 @@
+fa.training.carrental.config.KafkaConfig#replyingKafkaTemplate(LProducerFactory;LKafkaMessageListenerContainer;)LReplyingKafkaTemplate;
+false
+504488f100138fb611e05edd2f6ecf7b

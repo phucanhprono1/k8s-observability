@@ -1,0 +1,5 @@
+fa.training.carrental.mapper.AuthenticationMapper#toCarOwner(Lfa/training/carrental/dto/RegisterRequestDto;)Lfa/training/carrental/entities/CarOwner;
+false
+f2debf2cf1a6be1ba1ec7ab943cfa97f
+java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z
+java.math.BigDecimal#valueOf(D)Ljava/math/BigDecimal;

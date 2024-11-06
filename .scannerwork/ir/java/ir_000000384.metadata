@@ -1,0 +1,5 @@
+fa.training.carrental.services.impl.BookingServiceImpl#getBookingsByCustomerId(Ljava/lang/Long;LPageable;)LPage;
+false
+9b0da1a6f9e181cfc89655c826474f3e
+==
+findByCustomerId fa.training.carrental.repositories.BookingRepository#findByCustomerId(Ljava/lang/Long;LPageable;)LPage;

@@ -1,0 +1,9 @@
+fa.training.carrental.services.impl.AuthenticationServiceImpl#generateResetToken(Lfa/training/carrental/entities/Account;)Ljava/lang/String;
+false
+a2b06c912c16b860193e47dd98065a3d
+fa.training.carrental.entities.PasswordResetToken#<init>()V
+fa.training.carrental.entities.PasswordResetToken#instance-init#
+java.time.LocalDateTime#now()Ljava/time/LocalDateTime;
+java.time.LocalDateTime#plusHours(J)Ljava/time/LocalDateTime;
+java.util.UUID#randomUUID()Ljava/util/UUID;
+java.util.UUID#toString()Ljava/lang/String;

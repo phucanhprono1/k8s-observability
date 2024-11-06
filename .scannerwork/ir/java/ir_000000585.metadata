@@ -1,0 +1,14 @@
+fa.training.carrental.services.impl.EditProfileServiceImpl#getProfile(Ljava/lang/String;)Lfa/training/carrental/dto/ProfileResponse;
+false
+c81a74d430e38cdce56cb57a5b24fdc9
+java.lang.Enum#equals(Ljava/lang/Object;)Z
+java.lang.Enum#name()Ljava/lang/String;
+java.util.Optional#get()Ljava/lang/Object;
+java.util.Optional#isEmpty()Z
+==
+carOwnerToEditProfileRequest fa.training.carrental.mapper.ProfileMapper#carOwnerToEditProfileRequest(Lfa/training/carrental/entities/CarOwner;)Lfa/training/carrental/dto/ProfileResponse;
+customerToEditProfileRequest fa.training.carrental.mapper.ProfileMapper#customerToEditProfileRequest(Lfa/training/carrental/entities/Customer;)Lfa/training/carrental/dto/ProfileResponse;
+findByEmail fa.training.carrental.repositories.AccountRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;
+findByEmail fa.training.carrental.repositories.CarOwnerRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;
+findByEmail fa.training.carrental.repositories.CustomerRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;
+getRole fa.training.carrental.entities.Account#getRole()Lfa/training/carrental/enums/ERole;
